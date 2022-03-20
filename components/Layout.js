@@ -4,7 +4,7 @@ export const Layout = ({ children }) => {
   return (
     <div className="bg-background-base font-Poppins text-neutral-50">
       <Head>
-        <meta charSet="utf-8" />
+        <meta charSet="UTF-8" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Frank Xin</title>

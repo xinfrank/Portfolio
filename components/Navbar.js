@@ -5,8 +5,12 @@ import ClickAwayListener from "react-click-away-listener";
 
 export const Navbar = () => {
   const [hamburger, setHamburger] = useState(false);
+  const [clickAway, setClickAway] = useState(false);
   const handleClickAway = () => {
-    setHamburger(false);
+    setClickAway(true);
+    if (clickAway) {
+      setHamburger(false);
+    }
   };
   return (
     <nav className="flex sticky h-[5.5rem] items-center font-semibold text-2xl z-50 top-0 w-full max-w-4xl m-auto px-5 py-0 bg-background-base">
@@ -40,8 +44,9 @@ export const Navbar = () => {
             fill={"#EEEEEE"}
             size={32}
             onClick={() => {
-              if (!hamburger) {
-                setHamburger(true);
+              setHamburger(true);
+              if (clickAway) {
+                setClickAway(true);
               }
             }}
           />

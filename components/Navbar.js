@@ -39,7 +39,11 @@ export const Navbar = () => {
             className="hover:scale-95 cursor-pointer"
             fill={"#EEEEEE"}
             size={32}
-            onClick={() => setHamburger(true)}
+            onClick={() => {
+              if (!hamburger) {
+                setHamburger(true);
+              }
+            }}
           />
           {hamburger ? (
             <ClickAwayListener onClickAway={handleClickAway}>

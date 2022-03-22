@@ -4,8 +4,8 @@ export const WorkData = [
     role: "Backend Engineer",
     date: "Feb 2022 - Present",
     img_url: "/images/skuy-logo.png",
-    img_width: 79.2,
-    img_height: 74.2,
+    img_width: 100,
+    img_height: 100,
     img_alt: "Skuy Logo",
     efforts: [
       "• Developed API endpoints for content sharing",

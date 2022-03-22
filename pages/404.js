@@ -7,11 +7,11 @@ export default function Home() {
     <Layout>
       <div className="w-full h-full fixed -z-10 bg-background-base"></div>
       <div className="absolute w-[15rem] xxs:w-[22.5rem] xs:w-[30rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <h1 className="text-h1 font-semibold text-center">
+        <h1 className="text-[2rem] xs:text-h1 font-semibold text-center">
           404 | Page not Found
         </h1>
         <Link href="/" passHref>
-          <a className="text-normal text-neutral-100 block text-center mb-2 underline decoration-cyan-500">
+          <a className="text-small xs:text-normal text-neutral-100 block text-center mb-2 underline">
             Click here to return to main page
           </a>
         </Link>

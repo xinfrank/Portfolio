@@ -18,14 +18,14 @@ export const Accordions = () => {
       {WorkData.map((work, index) => {
         return (
           <div
-            className="w-full py-5 px-5 rounded-md bg-background-baselight mt-6 cursor-pointer"
+            className="w-full py-5 px-5 rounded-md bg-background-baselight mt-6"
             key={index}
           >
             <div
-              className="flex items-center"
+              className="flex items-center cursor-pointer"
               onClick={() => handleToggle(index)}
             >
-              <div className="xs:block hidden">
+              <div className="xs:block hidden h-[4.5rem] w-[4.5rem]">
                 <Image
                   src={work.img_url}
                   className="rounded-md"
@@ -40,15 +40,6 @@ export const Accordions = () => {
                 </h2>
                 <p className="inline text-normal"> {work.role}</p>
                 <p className="text-small">{work.date}</p>
-                {accordionToggle === index ? (
-                  <ul className="text-xsmall xs:text-small">
-                    {work.efforts.map((effort, index) => (
-                      <li className="text-neutral-200" key={index}>
-                        {effort}
-                      </li>
-                    ))}
-                  </ul>
-                ) : null}
               </div>
               {accordionToggle === index ? (
                 <GoChevronUp
@@ -64,6 +55,18 @@ export const Accordions = () => {
                 />
               )}
             </div>
+            {accordionToggle === index && (
+              <ul
+                className="text-xsmall xs:text-small xs:pl-[6rem] pl-0 cursor-pointer"
+                onClick={() => handleToggle(index)}
+              >
+                {work.efforts.map((effort, index) => (
+                  <li className="text-neutral-200" key={index}>
+                    {effort}
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         );
       })}

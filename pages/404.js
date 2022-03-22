@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <Layout>
       <div className="w-full h-full fixed -z-10 bg-background-base"></div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute w-[15rem] xxs:w-[20rem] xs:w-[30rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <h1 className="text-h1 font-semibold text-center">
           404 | Page not Found
         </h1>
@@ -15,7 +15,7 @@ export default function Home() {
             Click here to return to main page
           </a>
         </Link>
-        <div className="grid grid-cols-5 gap-1 w-[21rem] m-auto">
+        <div className="xxs:grid grid-cols-5 gap-1 w-[21rem] m-auto hidden">
           <WordleBlock letter="A" status="out" />
           <WordleBlock letter="R" status="found" />
           <WordleBlock letter="O" status="in" />

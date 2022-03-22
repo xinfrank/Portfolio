@@ -11,7 +11,7 @@ export default function Home() {
           404 | Page not Found
         </h1>
         <Link href="/" passHref>
-          <a className="text-normal text-neutral-100 block text-center mb-2">
+          <a className="text-normal text-neutral-100 block text-center mb-2 underline decoration-cyan-500">
             Click here to return to main page
           </a>
         </Link>

@@ -13,7 +13,6 @@ export const Stack = () => {
           <p>React</p>
           <p>Next.js</p>
           <p>Tailwind</p>
-          <p>Framer Motion</p>
         </div>
         <div className="flex flex-col text-normal mt-5 pr-4">
           <h2 className="text-h2 font-semibold text-neutral-100">Backend</h2>
@@ -27,12 +26,9 @@ export const Stack = () => {
         <div className="flex flex-col text-normal mt-5 ">
           <h2 className="text-h2 font-semibold text-neutral-100">Other</h2>
           <p>AWS</p>
-          <p>Heroku</p>
+          <p>Linux</p>
           <p>Git</p>
           <p>Figma</p>
-          <p>Scraping</p>
-          <p>Java</p>
-          <p>C++</p>
         </div>
       </div>
     </section>

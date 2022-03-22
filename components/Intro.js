@@ -17,7 +17,7 @@ export const Intro = () => {
         </span>
         . I enjoy building web applications that help make people’s lives a bit{" "}
         <span className="underline decoration-teal-500">easier/more fun</span>.
-        Outside of programming, I love listening to jazz, watching anime, and
+        Outside of programming, I like listening to jazz, watching anime, and
         playing chess.
       </p>
       <div className="flex mt-8">

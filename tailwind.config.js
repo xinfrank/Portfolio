@@ -26,6 +26,11 @@ module.exports = {
         xsmall: "18px",
       },
       colors: {
+        wordle: {
+          out: "#3A3A3C",
+          in: "#B1A039",
+          found: "#458C50",
+        },
         background: {
           base: "#21252A",
           button: "#7050EE",

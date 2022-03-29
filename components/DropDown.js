@@ -28,18 +28,20 @@ export const DropDown = () => {
                 <AnchorLink
                   offset="88"
                   href="#work"
-                  className="sm:hidden block"
+                  className="sm:hidden block cursor-default"
                 >
-                  <p className="text-neutral-50 font-semibold text-2xl">Work</p>
+                  <p className="text-neutral-50 font-semibold text-2xl cursor-pointer inline-block">
+                    Work
+                  </p>
                 </AnchorLink>
               </Menu.Item>
               <Menu.Item>
                 <AnchorLink
                   offset="88"
                   href="#stack"
-                  className="sm:hidden block"
+                  className="sm:hidden block cursor-default"
                 >
-                  <p className="text-neutral-50 font-semibold text-2xl mt-5">
+                  <p className="text-neutral-50 font-semibold text-2xl mt-5 inline-block cursor-pointer">
                     Stack
                   </p>
                 </AnchorLink>
@@ -48,9 +50,9 @@ export const DropDown = () => {
                 <AnchorLink
                   offset="88"
                   href="#projects"
-                  className="sm:hidden block"
+                  className="sm:hidden block cursor-default"
                 >
-                  <p className="text-neutral-50 font-semibold text-2xl mt-5">
+                  <p className="text-neutral-50 font-semibold text-2xl mt-5 inline-block cursor-pointer">
                     Projects
                   </p>
                 </AnchorLink>

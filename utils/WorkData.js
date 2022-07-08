@@ -8,9 +8,10 @@ export const WorkData = [
     img_height: 100,
     img_alt: "Skuy Logo",
     efforts: [
-      "• Developed API endpoints for content sharing",
-      "• Implemented user authorization",
-      "• Created and maintained documentation",
+      "• Developed API endpoints for posting, commenting, communities, and searching",
+      "• Implemented user authentication and an admin system for removing flagged posts",
+      "• Handled backend deployments and database migrations",
+      "• Created and maintained API documentation",
     ],
   },
 ];

@@ -8,14 +8,14 @@ export const Intro = () => {
     <section className="mt-16" id="intro">
       <h1 className="text-h1 font-bold">Hi, I am Frank 👋</h1>
       <h2 className="text-neutral-100 font-medium text-h2 mt-1">
-        Full-Stack Developer
+        Software Engineer & ML Hobbyist
       </h2>
       <p className="text-neutral-200 text-normal mt-6 ">
-        I am a freshman studying computer science at{" "}
+        I am a sophomore studying computer science at{" "}
         <span className="underline decoration-cyan-500 decoration-3">
           Northwestern University
         </span>
-        . I enjoy building web applications that help make people’s lives a bit{" "}
+        . I enjoy building software that help make people’s lives a bit{" "}
         <span className="underline decoration-teal-500">easier/more fun</span>.
         Outside of programming, I like listening to jazz, watching anime, and
         playing chess.

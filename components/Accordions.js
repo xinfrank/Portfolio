@@ -35,11 +35,11 @@ export const Accordions = () => {
                 />
               </div>
               <div className="xs:ml-6 ml-0 leading-8">
-                <h2 className="font-semibold inline text-normal">
+                <h2 className="font-semibold inline text-normal select-none">
                   {work.company}
                 </h2>
-                <p className="inline text-normal"> {work.role}</p>
-                <p className="text-small">{work.date}</p>
+                <p className="inline text-normal select-none"> {work.role}</p>
+                <p className="text-small select-none">{work.date}</p>
               </div>
               {accordionToggle === index ? (
                 <GoChevronUp
@@ -60,11 +60,12 @@ export const Accordions = () => {
                 className="text-xsmall xs:text-small xs:pl-[6rem] pl-0 cursor-pointer"
                 onClick={() => handleToggle(index)}
               >
-                {work.efforts.map((effort, index) => (
-                  <li className="text-neutral-200" key={index}>
-                    {effort}
-                  </li>
-                ))}
+                {accordionToggle ||
+                  work.efforts.map((effort, index) => (
+                    <li className="text-neutral-200" key={index}>
+                      {effort}
+                    </li>
+                  ))}
               </ul>
             )}
           </div>

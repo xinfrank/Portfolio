@@ -25,6 +25,7 @@ export const Stack = () => {
         </div>
         <div className="flex flex-col text-normal mt-5 ">
           <h2 className="text-h2 font-semibold text-neutral-100">Other</h2>
+          <p>Typescript</p>
           <p>AWS</p>
           <p>Linux</p>
           <p>Git</p>
